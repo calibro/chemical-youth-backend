@@ -121,6 +121,11 @@ export default {
         }
       }]
     },
+    {
+      name: 'credits',
+      title: 'Photo credits',
+      type: 'string'
+    },
   ],
   preview: {
     select: {
