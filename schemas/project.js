@@ -2,7 +2,8 @@ export default {
   name: 'project',
   title: 'Project',
   type: 'document',
-  fields: [{
+  fields: [
+    {
       name: 'title',
       title: 'Title',
       type: 'string'
@@ -30,56 +31,66 @@ export default {
       name: 'researchers',
       title: 'Researchers',
       type: 'array',
-      of: [{
-        type: 'reference',
-        to: {
-          type: 'researcher'
+      of: [
+        {
+          type: 'reference',
+          to: {
+            type: 'researcher'
+          }
         }
-      }]
+      ]
     },
     {
       name: 'methodologies',
       title: 'Methodologies',
       type: 'array',
-      of: [{
-        type: 'reference',
-        to: {
-          type: 'methodology'
+      of: [
+        {
+          type: 'reference',
+          to: {
+            type: 'methodology'
+          }
         }
-      }]
+      ]
     },
     {
       name: 'chemicals',
       title: 'Chemicals',
       type: 'array',
-      of: [{
-        type: 'reference',
-        to: {
-          type: 'chemical'
+      of: [
+        {
+          type: 'reference',
+          to: {
+            type: 'chemical'
+          }
         }
-      }]
+      ]
     },
     {
       name: 'topics',
       title: 'Topics',
       type: 'array',
-      of: [{
-        type: 'reference',
-        to: {
-          type: 'topic'
+      of: [
+        {
+          type: 'reference',
+          to: {
+            type: 'topic'
+          }
         }
-      }]
+      ]
     },
     {
       name: 'place',
       title: 'Place',
       type: 'array',
-      of: [{
-        type: 'reference',
-        to: {
-          type: 'location'
+      of: [
+        {
+          type: 'reference',
+          to: {
+            type: 'location'
+          }
         }
-      }]
+      ]
     },
     {
       name: 'mainImage',
@@ -98,34 +109,45 @@ export default {
       name: 'internalResources',
       title: 'Resource Documents',
       type: 'array',
-      of: [{
-        type: 'internalresource',
-      }]
+      of: [
+        {
+          type: 'internalresource'
+        }
+      ]
     },
     {
       name: 'externalResources',
       title: 'Resource Links',
       type: 'array',
-      of: [{
-        type: 'externalresource',
-      }]
+      of: [
+        {
+          type: 'externalresource'
+        }
+      ]
     },
     {
       name: 'images',
       title: 'Image Gallery',
       type: 'array',
-      of: [{
-        type: 'image',
-        options: {
-          hotspot: true
+      of: [
+        {
+          type: 'image',
+          options: {
+            hotspot: true
+          }
         }
-      }]
+      ]
     },
     {
       name: 'credits',
       title: 'Photo credits',
       type: 'string'
     },
+    {
+      title: 'Video URL',
+      name: 'videoUrl',
+      type: 'url'
+    }
   ],
   preview: {
     select: {
@@ -133,4 +155,4 @@ export default {
       media: 'mainImage'
     }
   }
-}
+};
