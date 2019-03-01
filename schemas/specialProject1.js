@@ -32,9 +32,24 @@ export default {
       type: 'string'
     },
     {
-      name: 'streetviewUrl',
-      title: 'Street View Url',
-      type: 'string'
+      name: 'streetviewCoordinates',
+      title: 'Street Coordinates',
+      type: 'geopoint'
+    },
+    {
+      name: 'streetviewHead',
+      title: 'Street View Head',
+      type: 'number'
+    },
+    {
+      name: 'streetviewPitch',
+      title: 'Street View Pitch',
+      type: 'number'
+    },
+    {
+      name: 'streetviewZoom',
+      title: 'Street View Zoom',
+      type: 'number'
     }
   ]
 };
