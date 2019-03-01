@@ -33,22 +33,22 @@ export default {
     },
     {
       name: 'streetviewCoordinates',
-      title: 'Street Coordinates',
+      title: 'StreetView Coordinates',
       type: 'geopoint'
     },
     {
       name: 'streetviewHead',
-      title: 'Street View Head',
+      title: 'StreetView Head',
       type: 'number'
     },
     {
       name: 'streetviewPitch',
-      title: 'Street View Pitch',
+      title: 'StreetView Pitch',
       type: 'number'
     },
     {
       name: 'streetviewZoom',
-      title: 'Street View Zoom',
+      title: 'StreetView Zoom',
       type: 'number'
     }
   ]
