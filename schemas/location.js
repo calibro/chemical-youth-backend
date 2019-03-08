@@ -1,13 +1,16 @@
 export default {
   name: 'location',
   type: 'document',
-  fields: [{
+  fields: [
+    {
       name: 'country',
       title: 'Country',
       type: 'reference',
-      to: [{
-        type: 'country'
-      }]
+      to: [
+        {
+          type: 'country'
+        }
+      ]
     },
     {
       name: 'city',
@@ -17,12 +20,17 @@ export default {
     {
       name: 'coordinates',
       title: 'Coordinates',
-      type: 'geopoint',
+      type: 'geopoint'
     },
     {
       name: 'zoom',
       title: 'Zoom',
       type: 'number'
+    },
+    {
+      name: 'priority',
+      title: 'Priority Order',
+      type: 'boolean'
     }
   ]
-}
+};
